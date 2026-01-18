@@ -725,7 +725,7 @@
       I'm actively seeking data analyst and data engineering opportunities. Whether you have a role in mind, 
       want to discuss my projects, or simply connect, I'd love to hear from you!</p>
 
-      <form class="contact-form" action="submit_form.php" method="POST">
+      <form class="contact-form" id="contactForm">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -741,12 +741,16 @@
           <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
         </div>
         
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+
+        <div id="formMessage"></div>
       </form>
     </div>
   </section>
-  
+
+<!-- JavaScript Files -->
   <script src="assets/js/floating-nav.js"></script>
+  <script src="assets/js/contact-form.js"></script>
 </body>
 
 <!-- Footer Section -->

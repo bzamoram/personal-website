@@ -42,7 +42,7 @@ body {
 }
 
 .name {
-  font-size: 2.1 rem;
+  font-size: 2.1rem;
   font-weight: 600; 
   margin: 0 0 10px 0;
   color: #fff;
@@ -89,7 +89,7 @@ body {
 }
 
 .main-navigation .nav-link {
-  color: white; /* White text when in hero section */
+  color: white;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.9rem;
@@ -104,7 +104,6 @@ body {
   color: #3293e7;
 }
 
-/* Active link indicator */
 .main-navigation .nav-link.active::after {
   content: '';
   position: absolute;
@@ -116,7 +115,6 @@ body {
   border-radius: 2px;
 }
 
-/* Sticky navigation - changes when scrolling */
 .main-navigation.scrolled {
   position: fixed;
   top: 0;
@@ -135,7 +133,7 @@ body {
 }
 
 .main-navigation.scrolled .nav-link {
-  color: #000000; /* Black text when scrolled */
+  color: #000000;
 }
 
 .main-navigation.scrolled .nav-link:hover {
@@ -146,7 +144,7 @@ body {
   background-color: #3293e7;
 }
 
-/* Hamburger Menu Button - Show on mobile only */
+/* Hamburger Menu Button */
 .hamburger-menu {
   display: none;
   position: fixed;
@@ -171,7 +169,7 @@ body {
   transition: 0.3s;
 }
 
-/* Mobile Navigation - Initially hidden off-screen */
+/* Mobile Navigation */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -186,12 +184,10 @@ body {
   transition: right 0.4s ease;
 }
 
-/* When menu is active - slide in from right */
 .mobile-nav.active {
   right: 0;
 }
 
-/* Close Button */
 .close-menu {
   position: absolute;
   top: 20px;
@@ -209,7 +205,6 @@ body {
   justify-content: center;
 }
 
-/* Mobile Nav List */
 .mobile-nav-list {
   list-style: none;
   margin: 0;
@@ -230,7 +225,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Overlay */
 .mobile-nav-overlay {
   position: fixed;
   top: 0;
@@ -249,7 +243,6 @@ body {
   visibility: visible;
 }
 
-/* Show on mobile */
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     display: block !important;
@@ -260,10 +253,7 @@ body {
   }
 }
 
-/* REMOVE body.menu-open for now - this was causing the scroll issue */
-
-
-/* Technologies Section - Upper Right */
+/* Technologies Section */
 .technologies {
   position: absolute;
   top: 120px;
@@ -285,7 +275,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin-left: 0;
-  justify-content: center; /* Add this for better centering */
+  justify-content: center;
 }
 
 .tech-badge {
@@ -318,7 +308,7 @@ body {
   object-fit: contain;
 }
 
-/* Tablet - adjust positions to prevent overlap */
+/* Tablet */
 @media screen and (max-width: 1024px) {
   .profile-container {
     z-index: 1;
@@ -351,16 +341,20 @@ body {
   }
 }
 
-/* Mobile - stack vertically and center properly */
+/* Mobile - FIX FOR CENTERING */
 @media screen and (max-width: 768px) {
-  /* Make sure hero section uses flexbox */
+  .hero-section {
+    padding: 90px 20px 10px 20px; 
+  }
+  
   .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 20px;
-    margin-bottom: -50px; /* Add bottom margin to prevent overlap */;
+    padding: 30px 15px; 
+    margin: 0; 
+    box-sizing: border-box;
   }
   
   .profile-container {
@@ -369,23 +363,34 @@ body {
     order: 1;
     width: 100%;
     margin: 0 auto;
+    top: 0; /* Reset top position */
   }
 
   .profile-image {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 15px auto; /* Center image properly */
   }
   
-  /* Center technologies section on mobile */
+  .name {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  
+  .role,
+  .location {
+    font-size: 1rem;
+  }
+  
+  /* Center technologies section */
   .technologies {
     position: relative;
     top: auto;
     right: auto;
     text-align: center;
-    margin: 30px auto;
+    margin: 30px auto 0 auto; /* Removed extra spacing */
     order: 2;
     width: 100%;
-    max-width: 280px; /* Constrain width to prevent overflow */
+    max-width: 280px;
+    padding: 0; /* Remove any padding */
   }
   
   .tech-heading {
@@ -415,10 +420,33 @@ body {
   }
 }
 
-/* Extra small devices */
+/* iPhone 14 Pro specific (393px width) */
 @media screen and (max-width: 480px) {
+  .hero-section {
+    padding: 90px 15px 10px 15px;
+  }
+  
+  .hero-content {
+    padding: 25px 10px;
+  }
+  
+  .profile-image {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .name {
+    font-size: 1.6rem;
+  }
+  
+  .role,
+  .location {
+    font-size: 0.95rem;
+  }
+  
   .technologies {
     max-width: 240px;
+    margin-top: 25px;
   }
   
   .tech-icons {
@@ -442,7 +470,7 @@ body {
   display: flex;
   gap: 15px;
   margin-top: 40px;
-  justify-content: center; /* Center buttons */
+  justify-content: center;
 }
 
 .hero-btn {
@@ -471,7 +499,6 @@ body {
   transform: translateY(0);
 }
 
-/* Responsive adjustments for buttons */
 @media screen and (max-width: 768px) {
   .hero-buttons {
     flex-direction: row;
@@ -486,7 +513,19 @@ body {
   .hero-btn {
     padding: 10px 20px;
     font-size: 0.85rem;
-    flex: 1; /* Make buttons equal width */
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-buttons {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .hero-btn {
+    padding: 10px 15px;
+    font-size: 0.8rem;
   }
 }
 
@@ -535,6 +574,21 @@ body {
   
   .social-icon i {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-icons {
+    gap: 10px;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .social-icon i {
+    font-size: 0.95rem;
   }
 }
 
@@ -700,6 +754,10 @@ body {
     display: block;
   }
   
+  .experience-section {
+    margin-top: -50px;
+  }
+
   /* Experience section layout */
   .section-title {
     text-align: center;
@@ -2187,6 +2245,37 @@ body {
   transform: translateY(0);
 }
 
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Contact Form Message Styles */
+#formMessage {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+
+#formMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#formMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .contact-section {
@@ -2216,9 +2305,13 @@ body {
     width: 100%;
     padding: 14px 0;
   }
+
+  #formMessage {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
 }
 
-/* Footer Section */
 /* Footer Section */
 .footer {
   padding: 60px 40px; /* Increased padding inside footer */

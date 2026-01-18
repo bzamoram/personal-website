@@ -1,3 +1,87 @@
+// ===== DESKTOP STICKY NAVIGATION =====
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const mainNav = document.getElementById('main-nav');
+  const heroSection = document.querySelector('.hero-section');
+  
+  if (!mainNav || !heroSection) {
+    console.error('Navigation or hero section not found');
+    return;
+  }
+  
+  // Get hero section height
+  const heroHeight = heroSection.offsetHeight;
+  
+  // Make navigation sticky on scroll
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // When scrolled past hero section (minus 100px for smooth transition)
+    if (scrollPosition > heroHeight - 100) {
+      mainNav.classList.add('scrolled');
+    } else {
+      mainNav.classList.remove('scrolled');
+    }
+  });
+  
+  // Smooth scrolling for desktop nav links
+  const desktopNavLinks = document.querySelectorAll('.main-navigation .nav-link');
+  
+  desktopNavLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href').substring(1); // Remove the #
+      const targetSection = document.getElementById(targetId);
+      
+      if (targetSection) {
+        // Calculate offset for sticky nav
+        const navHeight = mainNav.classList.contains('scrolled') ? 70 : 0;
+        const targetPosition = targetSection.offsetTop - navHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Update active state
+        desktopNavLinks.forEach(function(l) {
+          l.classList.remove('active');
+        });
+        this.classList.add('active');
+      }
+    });
+  });
+  
+  // Update active link based on scroll position
+  const sections = document.querySelectorAll('section[id]');
+  
+  window.addEventListener('scroll', function() {
+    const scrollY = window.pageYOffset;
+    
+    sections.forEach(function(section) {
+      const sectionHeight = section.offsetHeight;
+      const sectionTop = section.offsetTop - 150;
+      const sectionId = section.getAttribute('id');
+      
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        // Remove active from all desktop links
+        desktopNavLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        
+        // Add active to current section link
+        const activeLink = document.querySelector(`.main-navigation .nav-link[href="#${sectionId}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+        }
+      }
+    });
+  });
+  
+});
+
+// ===== MOBILE MENU =====
 document.addEventListener('DOMContentLoaded', function() {
   
   // Get all required elements
@@ -77,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
-// Experience tabs functionality - Updated for your HTML structure
+// ===== EXPERIENCE TABS =====
 document.addEventListener('DOMContentLoaded', function() {
   
   const tabButtons = document.querySelectorAll('.tab-button');
