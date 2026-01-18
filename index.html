@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+</head>
+<body>
+  <!-- Hamburger Menu Button (Mobile Only) -->
+  <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <!-- Mobile Navigation Overlay -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="close-menu" id="close-btn" aria-label="Close menu">
+      <span class="close-icon"></span>
+    </button>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+ <!-- Banner Section --> 
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <nav id="main-nav" class="main-navigation">
+        <ul>
+          <li><a href="#hero" class="nav-link">Home</a></li>          
+          <li><a href="#experience" class="nav-link">Experience</a></li>          
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li> 
+          <li><a href="#certifications" class="nav-link">Certifications</a></li> 
+          <li><a href="#about" class="nav-link">About</a></li>     
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="profile-container">
+        <img src="img/hero-headshot.JPG" alt="Bryan Zamora Montero" class="profile-image">
+        <h1 class="name">Bryan Zamora Montero</h1>
+        <p class="role">Data Engineer / Analyst</p>
+        <p class="location">Minneapolis, MN</p>
+      </div>
+      
+      <div class="technologies">
+        <h3 class="tech-heading">TECHNOLOGIES</h3>
+        <div class="tech-icons">
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=24045&format=png&color=000000" alt="Python">
+          </div>
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=66754&format=png&color=000000" alt="R">
+          </div>
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=57897&format=png&color=000000" alt="SQL">
+          </div>
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=52257&format=png&color=000000" alt="AWS">
+          </div>
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=38389&format=png&color=000000" alt="Git">
+          </div>
+          <div class="tech-badge">
+            <img src="https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=000000" alt="PowerBI">
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="hero-btn hero-btn-connect">Connect</a>
+          <a href="docs/Zamora, Bryan-Resume.pdf" target="_blank" class="hero-btn hero-btn-resume">Resume</a>
+        </div> 
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/bzamoram" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/bzamoram" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>             
+    </div>
+  </section>
+
+<!-- Work Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2 class="section-title">Experience</h2>
+      <!-- Add this scroll hint -->
+      <p class="scroll-hint">← Scroll to see more</p>
+
+    <div class="experience-container">
+      <!-- Left side: Company tabs -->
+      <div class="company-tabs">
+        <button class="tab-button active" data-tab="doosan">
+          Doosan Bobcat NA
+          <p class="tab-subtitle">Digital Innovation & Data Engineer Intern</p>
+        </button>
+        <button class="tab-button" data-tab="itsc">
+          IT Center
+          <p class="tab-subtitle">IT Student Technician Manager</p>
+        </button>  
+        <button class="tab-button" data-tab="sustainability">
+          Sustainability Office
+          <p class="tab-subtitle">Climate Data Intern</p>
+        </button>
+        <button class="tab-button" data-tab="tmobile">
+          T-Mobile TCC
+          <p class="tab-subtitle">Customer Account & Data Specialist (Bilingual)</p>
+        </button>
+        <button class="tab-button" data-tab="dining">
+          Dining Services
+          <p class="tab-subtitle">Operations Supervisor</p>
+        </button>        
+      </div>
+
+      <!-- Right side: Job details content -->
+      <div class="job-details">
+        <!-- Doosan Bobcat -->
+        <div id="doosan" class="job-panel active">
+          <h3 class="job-title">
+            Digital Innovation & Data Engineer Intern 
+            <span class="company-highlight">@ Doosan Bobcat NA</span>
+          </h3>
+          <p class="job-dates">January 2025 — December 2025</p>
+          <ul class="job-description">
+            <li>Engineered an AWS data pipeline using CloudWatch logs with Lambda for ETL automation, implementing infrastructure as code (IaC) to
+                query data views in Athena that would power QuickSight dashboards for monitoring API activity across clients.</li>
+            <li>Developed optimized SQL queries transforming complex datasets to uncover engagement trends, delivering data-driven insights that
+                informed product roadmap decisions and generated 3 Planning Increment (PI) tickets.</li>
+            <li>Collaborated with stakeholders to deploy GitHub Actions CI/CD pipeline automating OpenAPI documentation workflows, delivering high 
+                quality outcomes and reducing update times by 50% across 20+ teams.</li>
+            <li>Maintained QuickSight dashboards using Redshift and DynamoDB, optimizing queries and performing data validation to ensure data
+                accuracy and up-to-date telematics data models.</li>
+          </ul>
+        </div>
+
+        <!-- IT Solutions Center -->
+        <div id="itsc" class="job-panel">
+          <h3 class="job-title">
+            IT Student Technician Manager 
+            <span class="company-highlight">@ IT Center</span>
+          </h3>
+          <p class="job-dates">August 2024 — December 2025</p>
+          <ul class="job-description">
+            <li>Analyzed support IT request patterns to identify trends, creating SOPs and documentation that enabled proactive problem-solving and
+                reduced recurring technical issues for non-technical stakeholders.</li>
+            <li>Collaborated with IT managers analyzing work order data to identify patterns, standardizing workflows and procedures to deliver
+                consistent high-quality outcomes across the technician team.</li>
+            <li>Uncovered support trends from work orders data to drive process improvements, translating findings into actionable support procedure
+                updates and tracking impact through ticket reduction metrics.</li>
+          </ul>
+        </div>
+
+        <!-- Sustainability Office -->
+        <div id="sustainability" class="job-panel">
+          <h3 class="job-title">
+            Climate Data Intern 
+            <span class="company-highlight">@ Sustainability Office</span>
+          </h3>
+          <p class="job-dates">August 2023 — May 2025</p>
+          <ul class="job-description">
+            <li>Performed data extraction and transformation from multiple sustainability data sources into a centralized database (SIMAP),
+                implementing validation checks to ensure data accuracy and integrity across 500+ compliance points.</li>
+            <li>Created automated Power BI visualizations uncovering trends across 3+ years of data, delivering insightful reports that enabled informed
+                executive decision-making with 100% on-time delivery.</li>
+            <li>Collaborated with stakeholders across 5 departments performing data cleansing to resolve discrepancies, improving data integrity by 40%
+                and ensuring accurate operational reporting.</li>
+            <li>Collaborated with leadership, translating complex data analysis into actionable business insights, enabling informed decision-making
+                that drove strategic planning for the college sustainability initiatives.</li>                
+          </ul>
+        </div>
+
+        <!-- T-Mobile -->
+        <div id="tmobile" class="job-panel">
+          <h3 class="job-title">
+            Customer Account & Data Specialist (Bilingual) 
+            <span class="company-highlight">@ T-Mobile TCC</span>
+          </h3>
+          <p class="job-dates">May 2023 — July 2023</p>
+          <ul class="job-description">
+            <li>Analyzed customer transaction data to identify purchasing patterns and behavioral trends, generating actionable insights that informed 
+                sales strategy optimization and enhanced customer engagement performance across multiple product lines.</li>
+            <li>Applied statistical analysis and root-cause investigation techniques to troubleshooting workflows, documenting data-driven solutions 
+                that reduced resolution time, improved operational efficiency metrics, and elevated customer satisfaction scores in a bilingual 
+                service environment.</li>
+            <li>Transformed complex product and account datasets into clear, actionable recommendations for stakeholders, conducting comparative analysis 
+                and synthesizing multi-source information to support data-informed decision-making throughout the sales cycle.</li>
+          </ul>
+        </div>
+
+        <!-- Dining Services -->
+        <div id="dining" class="job-panel">
+          <h3 class="job-title">
+            Operations Supervisor 
+            <span class="company-highlight">@ Dining Services</span>
+          </h3>
+          <p class="job-dates">August 2022 — May 2024</p>
+          <ul class="job-description">
+            <li>Analyzed student employee performance metrics to identify skill gaps and training needs, delivering data-informed coaching and optimizing 
+                workflow allocation that improved team productivity, service delivery consistency, and operational compliance rates.</li>
+            <li>Tracked and evaluated operational data including transaction accuracy, customer issue resolution times, and safety protocol adherence, 
+                applying root-cause analysis to identify process bottlenecks and implement corrective actions that enhanced service quality metrics.</li>
+            <li>Monitored quality assurance KPIs and performance dashboards to assess team effectiveness, leveraging data-driven insights to recommend 
+                process improvements, standardize operational procedures, and achieve measurable gains in efficiency and accuracy across daily operations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title-projects">Projects</h2>    
+
+    <div class="projects-container">
+      <!-- PROJECT 1: Visual Left | Title + Description Right -->
+      <div class="project-1">
+        <div class="project-1-visual">      
+          <video autoplay loop muted playsinline>
+            <source src="img/GHG_Dashboard.mp4" type="video/mp4">
+          </video>   
+        </div>
+
+        <h3 class="project-1-title">Greenhouse Gas Emissions Dashboard</h3>
+
+        <div class="project-1-description">
+          <p>Developed an interactive Power BI dashboard tracking campus greenhouse gas emissions and energy 
+            consumption patterns.</p>
+          <p>Utilized DAX calculations and Power Query transformations to analyze 
+            sustainability metrics across Scope 1, 2, and 3 emissions. Visualized multi-year trends supporting 
+            institutional carbon reduction goals and climate action reporting compliance.</p>
+          <ul class="project-1-skills">
+            <li style="color: #b8dfe4;">Power BI</li>
+            <li style="color: #b3cfb9;">DAX</li>
+            <li style="color: #457ec1;">Power Query</li>
+            <li style="color: #fcd240;">Excel</li>
+            <li style="color: #457ec1;">Data Visualization</li>
+            <li style="color: #b3cfb9;">Sustainability Reporting</li>
+          </ul> 
+
+          <div class="project-actions">
+            <a href="https://github.com/bzamoram/GHG-Emissions-Dashboard-Concordia-College" target="_blank" class="project-link-btn" aria-label="View GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZDA5ODRmZDQtYjRhNS00NTA3LThlODUtMjZiNTQ1NjAzZDNlIiwidCI6IjQ4ODFhOGZhLWIyNTItNDkxMi1iOTNhLTc4MDZjNDFiYmU5MSIsImMiOjN9&pageName=bcd0bdf52b872bdc26a9" target="_blank" class="project-link-btn" aria-label="View project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> 
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Title + Description Left | Visual Right -->
+      <div class="project-2">
+        <h3 class="project-2-title">Twin Cities Airbnb: ETL Pipeline & BI Dashboard for Operational Analytics</h3>
+
+        <div class="project-2-description">
+          <p>Built an automated AWS ETL pipeline processing 3,500+ Twin Cities Airbnb listings from Inside Airbnb using Python, Pandas, and DynamoDB with NoSQL denormalization strategies.</p>
+          <p>Developed interactive QuickSight dashboards visualizing pricing trends, availability patterns, and neighborhood analytics to enable data-driven accommodation selection aligned with specific travel needs and location preferences.</p>
+          <ul class="project-2-skills">
+            <li style="color: #3773a5;">AWS ETL</li>
+            <li style="color: #ffd748;">Python (Boto3, Pandas)</li>
+            <li style="color: #01cd83">NoSQL</li>
+            <li style="color: #3b48cc;">DynamoDB</li>
+            <li style="color: #8c3223;">S3</li>
+            <li style="color: #6519c6;">QuickSight</li>
+          </ul> 
+
+          <div class="project-2-actions">
+            <a href="https://github.com/bzamoram/Twin-Cities-Airbnb-ETL-Pipeline-BI-Dashboard-for-Operational-Analytics.git" target="_blank" class="project-link-btn" aria-label="View GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/bzamoram/Twin-Cities-Airbnb-ETL-Pipeline-BI-Dashboard-for-Operational-Analytics/blob/main/img/project-workflow.png" target="_blank" class="project-link-btn" aria-label="View project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> 
+          </div>
+        </div>    
+
+        <div class="project-2-visual">      
+          <img src="img/project-2-workflow.png" alt="Twin Cities Airbnb Dashboard Preview" class="project-2-image"> 
+        </div>
+      </div>
+      
+      <!-- PROJECT 3: Visual Left | Title + Description Right -->
+      <div class="project-3">
+        <div class="project-3-visual">      
+          <img src="img/harry-potter-api-etl.png" alt="Harry Potter API ETL Project Preview" class="project-3-image">
+        </div>
+
+        <h3 class="project-3-title">Harry Potter (API) ETL Exploration</h3>
+
+        <div class="project-3-description">
+          <p>Developed a Python-based ETL pipeline extracting Harry Potter universe data from a public REST API, performing data transformations and validation, and loading structured information into MySQL database.</p>
+          <p>Demonstrated end-to-end data engineering workflow including API integration, data cleaning, normalization techniques, CSV export capabilities, and relational database schema design.</p>
+          <ul class="project-3-skills">
+            <li style="color: #7bfdfd;">API Integration</li>
+            <li style="color: #009d9a;">ETL Development</li>
+            <li style="color: #ff492c;">Data Wrangling</li>
+            <li style="color: #40865c;">CSV Data Engineering</li>
+            <li style="color: #8d8df7;">Relational Databases</li>
+            <li style="color: #346c99;">Python Scripting</li>
+          </ul> 
+
+          <div class="project-actions">
+            <a href="https://github.com/bzamoram/Harry-Potter-API-Exploration.git" target="_blank" class="project-link-btn" aria-label="View GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="img/harry-potter-api-etl.png" target="_blank" class="project-link-btn" aria-label="View project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> 
+          </div>
+        </div>      
+      </div>  
+
+      <!--More Projects Section-->
+      <div class="more-projects-container">
+        <h2 class="sub-section-title">Check Out These Other Projects</h2> 
+      
+        <div class="projects-grid">
+          <!-- Project 4 -->
+          <div class="project-card">
+
+            <!-- Folder icon top left --> 
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              
+              <!-- Action buttons top right -->
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/Fargo_Moorhead_Housing_Pricing" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://h8vi33-bzamoram.shinyapps.io/Fargo-Housing-Predictor/" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <h3 class="card-title">Fargo-Moorhead Housing Price Intelligence Platform</h3>
+            <p class="card-description">Developed end-to-end machine learning application predicting Fargo-Moorhead 
+              housing prices using linear regression on 2018-2022 sales data. Engineered data pipeline with DuckDB, 
+              trained predictive model with 96% accuracy (R²=0.96), and deployed production-ready interactive Shiny 
+              dashboard for real-time price predictions.</p>
+            <ul class="card-skills">
+              <li style="color: #4e3f2e;">Machine Learning (Linear Regression)</li>
+              <li style="color: #2b2bff;">Full-Stack R Development</li>
+              <li style="color: #1183c4;">Shiny Web Applications</li>
+              <li style="color: #545454;">DuckDB & Data Engineering</li>
+            </ul>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/FARS-Minnesota-ML-Pipeline.git" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://bzamoram.github.io/FARS-Minnesota-ML-Pipeline/" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">FARS Minnesota ML Pipeline</h3>
+            <p class="card-description">End-to-end data engineering and machine learning project analyzing Minnesota fatal 
+              traffic crashes. Automated ETL pipeline extracts NHTSA FARS API data, transforms engineered features, loads 
+              optimized SQLite database. Predictive models identify high-risk crashes with interactive visualizations for 
+              Minnesota Vision Zero initiatives.</p>
+            <ul class="card-skills">
+              <li style="color: #ffc729;">etl-pipeline</li>
+              <li style="color: #fe816e;">data-engineering</li>
+              <li style="color: #179eb0;">machine-learning</li>
+              <li style="color: #e42352;">predictive-modeling</li>
+            </ul>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/Forecasting-Brazils-Freshwater-Resources-with-Predictive-Modeling-.git" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://bzamoram.github.io/Forecasting-Brazils-Freshwater-Resources-with-Predictive-Modeling-/" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">Forecasting Brazil’s Water Resources with Predictive Modeling</h3>
+            <p class="card-description">Time series forecasting project with feature-engineered datasets from multiple data sources. 
+              Built automated data transformation pipeline, ARIMA dynamic regression models, and scenario-based forecasting framework. 
+              Demonstrates ETL development, statistical modeling, and policy-driven analytics for environmental sustainability.</p>
+            <ul class="card-skills">
+              <li style="color: #ffc729;">etl-pipeline</li>
+              <li style="color: #0bbfd0;">feature-engineering</li>
+              <li style="color: #412f77;">time-series-analysis</li>
+              <li style="color: #b1262a;">data-transformation</li>
+            </ul>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="project-card">
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              <div class="card-actions">
+                <!--<a href="#" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>-->
+                <a href="https://arcg.is/0XLrWr1" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">Assessing Oil/Gas Wells in North Dakota, US</h3>
+            <p class="card-description">This project applies GIS-based spatial statistics to map active oil and gas wells, 
+              quantify spill incidence and density, and intersect risk surfaces with hydrological networks and population data 
+              to assess environmental exposure and infrastructure vulnerability across North Dakota counties.</p>
+            <ul class="card-skills">
+              <li style="color: #ae4c86;">GIS-based</li>
+              <li style="color: #734c00;">Geoprocessing</li>
+              <li style="color: #ff5500;">ArcGIS</li>
+              <li style="color: #092d78;">Spatial Analysis</li>
+            </ul>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="project-card">
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/Differences-in-Green-Spaces-within-Communities-in-the-Fargo-Area.git" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://github.com/bzamoram/Differences-in-Green-Spaces-within-Communities-in-the-Fargo-Area/blob/main/Cella_Pambu_Zamora_Final_Version.pdf" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/bzamoram/Differences-in-Green-Spaces-within-Communities-in-the-Fargo-Area/blob/main/poster.png" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">Differences in Green Spaces within Communities in Fargo, ND</h3>
+            <p class="card-description">Conducted spatial analysis in ArcGIS Pro integrating HOLC redlining maps, Landsat thermal 
+              imagery, tree canopy data, and CDC Heat Index to examine environmental justice in Fargo. Performed geoprocessing 
+              workflows including spatial joins and zonal statistics to quantify urban heat disparities across historically 
+              marginalized neighborhoods.</p>
+            <ul class="card-skills">
+              <li style="color: #00897B;">Spatial Analysis</li>
+              <li style="color: #E37400;">Overlay Analysis</li>
+              <li style="color: #6A1B9A;">ArcGIS</li>
+              <li style="color: #217346;">Geospatial Data Integration</li>
+              <li style="color: #0078D4;">Remote Sensing</li>
+            </ul>
+          </div>
+
+          <!-- Project 9 -->
+          <div class="project-card">
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/Economic-Impact-Analysis-Domestic-Violence-YWCA.git" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://github.com/bzamoram/Economic-Impact-Analysis-Domestic-Violence-YWCA/blob/main/Economic-Impact-DV-YWCA.pdf" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="card-title">Economic Impact Analysis: Domestic Violence & YWCA Interventions</h3>
+            <p class="card-description">Quantified domestic violence economic impact ($31.5M annually) through multi-source 
+              data integration, statistical modeling, and cost-benefit analysis. Applied inflation adjustments and prevalence 
+              calculations to demonstrate YWCA intervention ROI of $3.6M in community savings.</p>
+            <ul class="card-skills">
+              <li style="color: #fa4c1d;">Cost-Benefit-Analysis</li>
+              <li style="color: #4a3327;">Statistical-Modeling</li>
+              <li style="color: #ed26b7;">Data-Integration</li>
+              <li style="color: #1a844c;">Excel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+    </section>
+
+<!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2 class="section-title-education">Education</h2> 
+    
+    <div class="education-container">
+      <div class="education-item">
+        <h3 class="degree-title">Bachelors of Art in Computer Science (Data Analytics) & Environmental Sustainability</h3>
+        <p class="institution-name">Concordia College, Moorhead, MN | December 2025</p>
+      </div>
+
+      <img src="img/cobber-logo.jpg" alt="cobber-logo" class="cobber-logo">
+
+      <div class="Relevant-Courses">
+        <h3 class="relevant-courses-title">Coursework</h3>
+        <div class="courses-list">
+          <div class="course-column">
+            <ul>
+              <li>Database Management</li>
+              <li>Data analysis</li>
+              <li>Database Mining</li>
+              <li>Data Forecasting</li>
+              <li>Applied Statistical Models</li>
+            </ul>
+          </div>
+      </div>
+    </div>  
+  </section>
+
+<!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <h2 class="section-title-certifications">Certifications</h2> 
+    
+    <div class="certifications-container">
+      <div class="certification-item">
+        <div class="certification-actions">
+          <a href="https://credentials.getdbt.com/b330af26-de47-41b6-a8a0-f82d3a9095e0#acc.Xya79cRw" target="_blank" class="project-link-btn" aria-label="View project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a> 
+        </div>
+        <h3 class="certification-title">DBT Fundamentals Credential</h3>
+        <p class="certification-issuer">Issued by dbt Labs</p>
+        <p class="certification-date">Issued November 2025</p>
+        <p class="description">Completed dbt Fundamentals v2 course, demonstrating proficiency in building models, 
+          configuring sources, implementing tests, documentation, and deploying scalable, reliable analytics 
+          workflows following best practices.</p>
+        <ul class="certification-skills skills-dbt">
+          <li>SQL</li>
+          <li>Data Modeling</li>
+          <li>Data Transformation</li>
+          <li>Version Control (Git)</li>
+        </ul>
+        <img src="img/dbt-certification.png" alt="dbt-certification" class="certification-image">
+      </div>
+
+      <div class="certification-item">
+        <h3 class="certification-title">AWS QuickSight Basics</h3>
+        <p class="certification-issuer">Issued by LinkedIn Learning</p>
+        <p class="certification-date">Issued January 2025</p>
+        <p class="description">Completed LinkedIn's AWS QuickSight course, gaining expertise in connecting data 
+          sources, transforming and analyzing data, and creating shareable dashboards for stakeholder reporting.</p>
+        <ul class="certification-skills skills-aws">
+          <li>Data Visualization</li>
+          <li>Cloud Analytics</li>
+          <li>Business Intelligence</li>
+          <li>Dashboard Development</li>
+        </ul>
+        <img src="img/quicksight-certification.png" alt="quicksight-certification" class="certification-image">          
+      </div>
+
+      <div class="certification-item">
+        <div class="certification-actions">
+          <a href="https://www.credly.com/badges/775c1362-99d0-4066-935c-c4434a588964" target="_blank" class="project-link-btn" aria-label="View project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a> 
+        </div>
+        <h3 class="certification-title">Ready for SAFE®</h3>
+        <p class="certification-issuer">Issued by SAFe by Scaled Agile, Inc</p>
+        <p class="certification-date">Issued August 2025</p>
+        <p class="description">Completed SAFe Jumpstart learning series, gaining foundational knowledge in Lean, 
+          Agile, and SAFe principles while experiencing Agile Release Train and team workflows.</p>
+        <ul class="certification-skills skills-safe">
+          <li>Agile Methodologies</li>
+          <li>SAFe Framework</li>
+          <li>Lean Principles</li>
+          <li>Project Management</li>
+        </ul>
+        <img src="img/safe-certification.png" alt="safe-certification" class="certification-image">                  
+      </div>
+
+      <div class="certification-item">
+        <h3 class="certification-title">Intro to Web APIs</h3>
+        <p class="certification-issuer">Issued by LinkedIn Learning</p>
+        <p class="certification-date">Issued September 2025</p>
+        <p class="description">Completed LinkedIn's Introduction to Web APIs course, learning to connect APIs, 
+          navigate documentation, parse JSON data, and interact securely and efficiently.</p>  
+        <ul class="certification-skills skills-api">
+          <li>API Integration</li>
+          <li>RESTful APIs</li>
+          <li>JSON</li>
+          <li>Python</li>
+        </ul>
+        <img src="img/api-certification.png" alt="api-certification" class="certification-image">                
+      </div>
+    </div>
+  </section>  
+
+<!-- About Me Section -->
+  <section id="about" class="about-section">
+    <h2 class="section-title-about">About Me</h2> 
+
+    <div class="about-me-container">
+      <div class="about-me-description">
+        <p>I am a Data Analyst and Engineer who turns complex datasets into business solutions through Python, SQL, 
+          and cloud technologies.</p>
+        <p>With a B.S. in Computer Science (Data Analytics) from Concordia College, I specialize in building ETL 
+          pipelines, automating data workflows, and delivering scalable analytics on AWS. My curiosity about how 
+          data answers real-world questions led me to combine analytics with cloud engineering, path that gained 
+          momentum during my work at Doosan Bobcat NA, where I implemented cloud-based data solutions.</p>
+        <p>What I bring:</p>
+        <ul class="value">
+          <li>Data engineering with Python, SQL, and AWS (DynamoDB, QuickSight, CloudWatch)</li>
+          <li>ETL pipeline development and automation for business intelligence</li>
+          <li>Data visualization using Power BI and AWS analytics tools</li>
+          <li>Full-stack development experience supporting end-to-end data solutions</li>
+        </ul>
+        <p>I am eager to dive deeper into the data intelligence arena, while expanding both my technical skills 
+          and business impact. Let's connect if you're looking for someone who bridges data engineering and 
+          analytics to drive actionable insights.</p>
+      </div> 
+
+      <div class="about-me-picture">
+        <img src="img/about-me.JPG" alt="About Me" class="certification-image">        
+        <div class="hero-buttons-about-section">
+          <a href="#contact" class="hero-btn-about-section">Connect</a>
+          <a href="docs/BryanZM-resume-.pdf" target="_blank" class="hero-btn-about-section">Resume</a>
+        </div> 
+        <div class="social-icons-about-section">
+          <a href="https://www.linkedin.com/in/bzamoram" target="_blank" class="social-icon-about-section" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/bzamoram" target="_blank" class="social-icon-about-section" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+<!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title-contact">Let's Connect!</h2>
+    <div class="contact-container">
+      <p class="contact-intro">
+      I'm actively seeking data analyst and data engineering opportunities. Whether you have a role in mind, 
+      want to discuss my projects, or simply connect, I'd love to hear from you!</p>
+
+      <form class="contact-form" action="submit_form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  <script src="floating-nav.js"></script>
+</body>
+
+<!-- Footer Section -->
+<footer>
+    <p class="footer-text">&copy; 2025 Bryan Zamora Montero. All rights reserved. | Inspired by Jaleta Tesgera's & Sheikh Vazid Ahmed's websites.</p>
+</footer>
+
+</html>
