@@ -13,7 +13,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  background: url('img/hero-backgroundd.png') center center;
+  background: url('../img/hero-background.png') center center;
   background-size: cover;
   padding: 60px 40px;
   min-height: 350px;
