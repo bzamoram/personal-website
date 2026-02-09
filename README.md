@@ -2,7 +2,7 @@
 
 This is a modern, responsive portfolio website showcasing my data analytics and engineering projects, technical skills, and professional experience.
 
-## Live Demo
+## Actual Site
 [View Live Site](https://bzamoram.vercel.app/) 
 
 ## About
