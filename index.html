@@ -88,7 +88,7 @@
         </div>
         <div class="hero-buttons">
           <a href="#contact" class="hero-btn hero-btn-connect">Connect</a>
-          <a href="assets/docs/Zamora, Bryan-Resume.pdf" target="_blank" class="hero-btn hero-btn-resume">Resume</a>
+          <a href="assets/docs/ZamoraMontero_Bryan-Resume.pdf" target="_blank" class="hero-btn hero-btn-resume">Resume</a>
         </div> 
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/bzamoram" target="_blank" class="social-icon" aria-label="LinkedIn">
@@ -111,6 +111,10 @@
     <div class="experience-container">
       <!-- Left side: Company tabs -->
       <div class="company-tabs">
+        <button class="tab-button active" data-tab="thomson-reuters">
+          Thomson Reuters
+          <p class="tab-subtitle">Tax Verification Associate</p>
+        </button>
         <button class="tab-button active" data-tab="doosan">
           Doosan Bobcat NA
           <p class="tab-subtitle">Digital Innovation & Data Engineer Intern</p>
@@ -135,6 +139,23 @@
 
       <!-- Right side: Job details content -->
       <div class="job-details">
+        <!-- Thomson Reuters -->
+        <div id="thomson-reuters" class="job-panel active">
+          <h3 class="job-title">
+            Tax Verification Associate 
+            <span class="company-highlight">@ Thomson Reuters</span>
+          </h3>
+          <p class="job-dates">February 2026 — Present</p>
+          <ul class="job-description">
+            <li>Verified high-volume tax data extracted by Optical Character Recognition (OCR)-driven software against source documents and databases, 
+                ensuring accurate, complete information for individual tax returns.</li>
+            <li>Performed detailed quality checks on scanned financial documents, correcting OCR errors, resolving data discrepancies, and updating 
+                missing fields to maintain data quality standards.</li>
+            <li>Supported paperless tax workflows by organizing digital documents, meeting daily production targets, and escalating recurring data 
+                or software issues to improve processing efficiency.</li>  
+          </ul>
+        </div>
+
         <!-- Doosan Bobcat -->
         <div id="doosan" class="job-panel active">
           <h3 class="job-title">
@@ -143,14 +164,16 @@
           </h3>
           <p class="job-dates">January 2025 — December 2025</p>
           <ul class="job-description">
-            <li>Engineered an AWS data pipeline using CloudWatch logs with Lambda for ETL automation, implementing infrastructure as code (IaC) to
-                query data views in Athena that would power QuickSight dashboards for monitoring API activity across clients.</li>
-            <li>Developed optimized SQL queries transforming complex datasets to uncover engagement trends, delivering data-driven insights that
-                informed product roadmap decisions and generated 3 Planning Increment (PI) tickets.</li>
-            <li>Collaborated with stakeholders to deploy GitHub Actions CI/CD pipeline automating OpenAPI documentation workflows, delivering high 
-                quality outcomes and reducing update times by 50% across 20+ teams.</li>
-            <li>Maintained QuickSight dashboards using Redshift and DynamoDB, optimizing queries and performing data validation to ensure data
-                accuracy and up-to-date telematics data models.</li>
+            <li>Engineered an AWS data pipeline with CloudWatch and Lambda for ETL automation, implementing infrastructure as code (IaC) using
+                CloudFormation to power QuickSight dashboards monitoring API activity across 80+ client teams.</li>
+            <li>Collaborated in configuring AWS IAM and CloudFormation permissions enforcing least privilege, cutting teammate access request
+                turnaround by 50% by updating role policies.</li>
+            <li>Participated in deploying a CI/CD pipeline using GitHub Actions to automate OpenAPI documentation workflows in, reducing deployment
+                times by 50% across 20+ teams.</li>
+            <li>Optimized SQL queries transforming complex datasets to uncover digital product engagement trends, resulting in 3 Planning Increment
+                (PI) tickets that optimized the Owner Portal usage.</li>
+            <li>Maintained QuickSight dashboards using Redshift and DynamoDB, through data validation and query optimization to ensure 100%
+                accuracy of real-time telematics data models.</li>    
           </ul>
         </div>
 
@@ -162,12 +185,12 @@
           </h3>
           <p class="job-dates">August 2024 — December 2025</p>
           <ul class="job-description">
-            <li>Analyzed support IT request patterns to identify trends, creating SOPs and documentation that enabled proactive problem-solving and
-                reduced recurring technical issues for non-technical stakeholders.</li>
-            <li>Collaborated with IT managers analyzing work order data to identify patterns, standardizing workflows and procedures to deliver
-                consistent high-quality outcomes across the technician team.</li>
-            <li>Uncovered support trends from work orders data to drive process improvements, translating findings into actionable support procedure
-                updates and tracking impact through ticket reduction metrics.</li>
+            <li>Analyzed IT support request patterns identifying recurring issues, creating standardized SOPs on Confluence that reduced repeat
+                technical incidents by proactively addressing root causes for 500+ users.</li>
+            <li>Collaborated with IT managers on work order data analysis, standardizing workflows across 8-member technician team to maintain
+                consistent service quality and governance compliance</li>
+            <li>Identified support trends from ticket data driving process improvements, translating findings into actionable procedure updates that
+                decreased average resolution time and improved troubleshooting efficiency.</li>
           </ul>
         </div>
 
@@ -179,15 +202,12 @@
           </h3>
           <p class="job-dates">August 2023 — May 2025</p>
           <ul class="job-description">
-            <li>Performed data extraction and transformation from multiple sustainability data sources into a centralized database (SIMAP),
-                implementing validation checks to ensure data accuracy and integrity across 500+ compliance points.</li>
-            <li>Created automated Power BI visualizations uncovering trends across 3+ years of data, delivering insightful reports that enabled informed
-                executive decision-making with 100% on-time delivery.</li>
-            <li>Collaborated with stakeholders across 5 departments performing data cleansing to resolve discrepancies, improving data integrity by 40%
-                and ensuring accurate operational reporting.</li>
-            <li>Collaborated with leadership, translating complex data analysis into actionable business insights, enabling informed decision-making
-                that drove strategic planning for the college sustainability initiatives.</li>                
-          </ul>
+            <li>Improved sustainability compliance by 40% across 500+ SIMAP data points by centralizing multi-source data, implementing validation
+                checks, and resolving discrepancies with stakeholders in 5 college departments.</li>
+            <li>Enabled on-time executive reporting 100% of the time by automating Power BI dashboards over 3+ years of sustainability data, uncovering
+                trends that informed strategic planning decisions.</li>
+            <li>Drove data-informed sustainability initiatives by translating complex analytics into actionable insights for leadership, supporting strategic
+                planning and continuous improvement of institutional sustainability goals.</li>
         </div>
 
         <!-- T-Mobile -->
@@ -227,12 +247,49 @@
       </div>
     </div>
   </section>
-
+  
 <!-- Projects Section -->
   <section id="projects" class="projects-section">
     <h2 class="section-title-projects">Projects</h2>    
 
     <div class="projects-container">
+      <!-- PROJECT 0.1: Title + Description Left | Visual Right -->
+      <div class="project-0-9">
+        <h3 class="project-0-9-title">Minnesota Farm Supply Chain Analytics</h3>
+
+        <div class="project-0-9-description">
+          <p>Most people think you need years of experience to build data pipelines, but this project proves you just need strong architecture, modern tools, and persistence.</p>
+          <p>In three weeks, I built and deployed a full ELT pipeline on AWS S3, Snowflake, and dbt, practicing medallion modeling, rigorous testing, and production-grade documentation with synthetic data.</p>
+          <ul class="project-0-9-skills">
+            <li style="color: #070d2d;">ELT</li>
+            <li style="color: #ce8946;">Medallion Orchestration</li>
+            <li style="color: #6c0163">SQL</li>
+            <li style="color: #fe6849;">DBT</li>
+            <li style="color: #28b4e7;">Snowflake</li>
+            <li style="color: #6519c6;">Dimensional Modeling</li>
+          </ul> 
+
+          <div class="project-0-9-actions">
+            <a href="https://github.com/bzamoram/mn-farm-supply-chain-analytics.git" target="_blank" class="project-link-btn" aria-label="View GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/bzamoram/mn-farm-supply-chain-analytics/blob/master/README.md" target="_blank" class="project-link-btn" aria-label="View project">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a> 
+          </div>
+        </div>    
+
+        <div class="project-0-9-visual">      
+          <img src="assets/img/elt_pipeline.png" alt="Minnesota Farm Supply Chain Analytics Preview" class="project-0-9-image"> 
+        </div>
+      </div>
+
       <!-- PROJECT 1: Visual Left | Title + Description Right -->
       <div class="project-1">
         <div class="project-1-visual">      
@@ -312,7 +369,7 @@
         </div>
       </div>
       
-      <!-- PROJECT 3: Visual Left | Title + Description Right -->
+      <!-- PROJECT 3: Visual Left | Title + Description Right 
       <div class="project-3">
         <div class="project-3-visual">      
           <img src="assets/img/harry-potter-api-etl.png" alt="Harry Potter API ETL Project Preview" class="project-3-image">
@@ -347,13 +404,52 @@
             </a> 
           </div>
         </div>      
-      </div>  
+      </div>-->  
 
       <!--More Projects Section-->
       <div class="more-projects-container">
         <h2 class="sub-section-title">Check Out These Other Projects</h2> 
       
         <div class="projects-grid">
+
+          <!-- Project 3 -->
+          <div class="project-card">
+
+            <!-- Folder icon top left --> 
+            <div class="card-header">
+              <span class="folder-icon">🗀</span>
+              
+              <!-- Action buttons top right -->
+              <div class="card-actions">
+                <a href="https://github.com/bzamoram/Harry-Potter-API-Exploration" target="_blank" class="card-link-btn" aria-label="View GitHub repository">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="assets/img/harry-potter-api-etl.png" target="_blank" class="card-link-btn" aria-label="View project">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+            <h3 class="card-title">Harry Potter (API) ETL Exploration</h3>
+            <p class="card-description">Developed a Python-based ETL pipeline extracting Harry Potter universe data from a 
+              public REST API, performing data transformations and validation, and loading structured information into MySQL database.
+              Demonstrated end-to-end data engineering workflow including API integration, data cleaning, normalization techniques, CSV 
+              export capabilities, and relational database schema design.
+            </p>
+            <ul class="card-skills">
+              <li style="color: #7bfdfd;">API Integration</li>
+              <li style="color: #009d9a;">ETL Development</li>
+              <li style="color: #ff492c;">Data Wrangling</li>
+              <li style="color: #8d8df7;">Relational Databases</li>
+            </ul>
+          </div>
+
           <!-- Project 4 -->
           <div class="project-card">
 
@@ -683,7 +779,7 @@
       <div class="about-me-description">
         <p>I am a Data Analyst and Engineer who turns complex datasets into business solutions through Python, SQL, 
           and cloud technologies.</p>
-        <p>With a B.S. in Computer Science (Data Analytics) from Concordia College, I specialize in building ETL 
+        <p>With a B.A. in Computer Science (Data Analytics) from Concordia College, I specialize in building ETL 
           pipelines, automating data workflows, and delivering scalable analytics on AWS. My curiosity about how 
           data answers real-world questions led me to combine analytics with cloud engineering, path that gained 
           momentum during my work at Doosan Bobcat NA, where I implemented cloud-based data solutions.</p>
@@ -703,7 +799,7 @@
         <img src="assets/img/about-me.JPG" alt="About Me" class="certification-image">        
         <div class="hero-buttons-about-section">
           <a href="#contact" class="hero-btn-about-section">Connect</a>
-          <a href="assets/docs/Zamora, Bryan-Resume.pdf" target="_blank" class="hero-btn-about-section">Resume</a>
+          <a href="assets/docs/ZamoraMontero_Bryan-Resume.pdf" target="_blank" class="hero-btn-about-section">Resume</a>
         </div> 
         <div class="social-icons-about-section">
           <a href="https://www.linkedin.com/in/bzamoram" target="_blank" class="social-icon-about-section" aria-label="LinkedIn">
